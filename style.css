@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    background-color: hsl(216, 12%, 8%);
+    --card-bg: hsl(213, 19%, 18%);
+    --text-clr: hsl(216, 12%, 54%);
+    --radio-bg: hsl(217, 12%, 63%);
+    --heading-clr: hsl(0, 0%, 100%);
+    --bright-clr: hsl(25, 97%, 53%);
+    --card-items-bg: hsl(213, 19%, 21%);
+
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h3 {
+    color: var(--heading-clr);
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: var(--bright-clr);
+    font-weight: 400;
+    font-size: 0.94rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.display-p {
+    text-align: center;
+}
+
+p {
+    color: var(--text-clr);
+    font-weight: 400;
+    font-size: 0.94rem;
+    line-height: 1.5em;
+}
+
+label {
+    color: var(--text-clr);
+    
+}
+
+button {
+    color: var(--heading-clr);
+    background-color: var(--bright-clr);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.display-p {
+    line-height: 1.60em;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 0.94rem;
+}
+
+/* LAYOUT */
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.display,
+.main-card {
+    background-color: var(--card-bg);
+    max-width: 25.5rem;
+    padding: 2rem;
+    border-radius: 7%;
+}
+
+.star {
+    background-color: var(--card-items-bg);
+    border-radius: 50%;
+    padding: 0.75em;
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+p {
+    margin-top: 0.75rem;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input {
+    display: none;
+}
+ 
+.radio-btn {
+    width: 3em;
+    height: 3em;
+    background-color: var(--card-items-bg);
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    
+
+
+button {
+    display: block;
+    border: 0;
+    width: 100%;
+    border-radius: 3em;
+    padding-top: 0.90em;
+    padding-bottom: 0.90em;
+    margin-top: 1.75rem;
+    }
+
+#display {
+    padding-top: 2.5em;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.75em;
+}
+
+h2 {
+    margin-top: 2em;
+    background-color: var(--card-items-bg);
+    padding: 0.50em 1.50em 0.50em 1.50em;
+    border-radius: 3em;
+}
+
+h3 {
+    padding-top: 1.25em;
+}
+
+.display-p {
+    margin: 0;
+    width: 100%;
+    padding-top: 0.75em;
+    padding-bottom: 1.25em;
+}
+
+/* PSEUDO-CLASSES */
+
+button:hover {
+    cursor: pointer;
+    color: var(--bright-clr);
+    background-color: var(--heading-clr);
+}
+
+.radio-btn:hover {
+    cursor: pointer;  
+    background-color: var(--bright-clr);
+    color: var(--heading-clr);
+}
+
+.radio-input:checked + label{
+    background-color: var(--text-clr);
+    color: var(--heading-clr);
+}
+
+@media all and (max-width: 375px) {
+    body{
+        padding: 0.75em;
+    }
+
+    .display,
+    .main-card {
+        padding-right: 0;
+        padding: 1.25em;
+    }
+
+  
+}
+
