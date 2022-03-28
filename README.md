@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/OneManBanned/interactive-rating-component.git](https://github.com/OneManBanned/interactive-rating-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://onemanbanned.github.io/interactive-rating-component/](https://onemanbanned.github.io/interactive-rating-component/)
 
 ## My process
 
